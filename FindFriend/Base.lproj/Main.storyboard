@@ -76,7 +76,7 @@
         <!--Collection View Controller-->
         <scene sceneID="fDj-da-YVH">
             <objects>
-                <collectionViewController id="KRC-Wc-jo4" sceneMemberID="viewController">
+                <collectionViewController id="KRC-Wc-jo4" customClass="CollectionViewController" customModule="FindFriend" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1aM-is-5ZI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="1677" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Info About Pets-->
         <scene sceneID="4ew-e8-cF5">
             <objects>
-                <viewController id="PdC-Kw-3oR" sceneMemberID="viewController">
+                <viewController id="PdC-Kw-3oR" customClass="InfoAboutPets" customModule="FindFriend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hRL-MB-ynz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

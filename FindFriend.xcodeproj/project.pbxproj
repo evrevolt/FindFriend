@@ -13,6 +13,8 @@
 		545947FF2924B3A50088B3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545947FD2924B3A50088B3BC /* Main.storyboard */; };
 		545948012924B3A70088B3BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545948002924B3A70088B3BC /* Assets.xcassets */; };
 		545948042924B3A70088B3BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545948022924B3A70088B3BC /* LaunchScreen.storyboard */; };
+		5459480C2924C4230088B3BC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459480B2924C4230088B3BC /* CollectionViewController.swift */; };
+		5459480E2924C4610088B3BC /* InfoAboutPets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459480D2924C4610088B3BC /* InfoAboutPets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		545948002924B3A70088B3BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545948032924B3A70088B3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		545948052924B3A70088B3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5459480B2924C4230088B3BC /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		5459480D2924C4610088B3BC /* InfoAboutPets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutPets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				545947F92924B3A50088B3BC /* SceneDelegate.swift */,
 				545947FB2924B3A50088B3BC /* ViewController.swift */,
 				545947FD2924B3A50088B3BC /* Main.storyboard */,
+				5459480D2924C4610088B3BC /* InfoAboutPets.swift */,
+				5459480B2924C4230088B3BC /* CollectionViewController.swift */,
 				545948002924B3A70088B3BC /* Assets.xcassets */,
 				545948022924B3A70088B3BC /* LaunchScreen.storyboard */,
 				545948052924B3A70088B3BC /* Info.plist */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5459480C2924C4230088B3BC /* CollectionViewController.swift in Sources */,
 				545947FC2924B3A50088B3BC /* ViewController.swift in Sources */,
 				545947F82924B3A50088B3BC /* AppDelegate.swift in Sources */,
+				5459480E2924C4610088B3BC /* InfoAboutPets.swift in Sources */,
 				545947FA2924B3A50088B3BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
