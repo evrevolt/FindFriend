@@ -95,6 +95,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <segue destination="PdC-Kw-3oR" kind="presentation" id="vh7-1S-FGh"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -107,6 +110,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKb-x6-MWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1677" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4ew-e8-cF5">
+            <objects>
+                <viewController id="PdC-Kw-3oR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRL-MB-ynz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FEa-Tv-7t1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mu-6x-y7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="-2"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Wtk-Wc-S3E">
