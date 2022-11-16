@@ -19,13 +19,60 @@ enum PetsType {
     case dog
 }
 
-let names = ["Cat", "Dog"]
+let pets = [
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Шарик",
+         petsType: .dog,
+         description: "Этот дружище бегал по улице в поисках еды",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg"),
+    
+    Pets(name: "Мурзик",
+         petsType: .cat,
+         description: "Этот котик попал к нам из мусорного бочка",
+         image: "cat1.jpg")
+]
 
 func getPets() -> Pets {
     
-    return Pets(name: names.randomElement() ?? "nil",
-                petsType: .cat,
-                description: "Описание",
-                image: "cat1.jpg")
+    return pets.randomElement()!
     
 }
