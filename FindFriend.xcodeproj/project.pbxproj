@@ -15,6 +15,7 @@
 		545948042924B3A70088B3BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545948022924B3A70088B3BC /* LaunchScreen.storyboard */; };
 		5459480C2924C4230088B3BC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459480B2924C4230088B3BC /* CollectionViewController.swift */; };
 		5459480E2924C4610088B3BC /* InfoAboutPets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459480D2924C4610088B3BC /* InfoAboutPets.swift */; };
+		545948102924C8630088B3BC /* InfoAboutDevelopers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459480F2924C8630088B3BC /* InfoAboutDevelopers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		545948052924B3A70088B3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5459480B2924C4230088B3BC /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		5459480D2924C4610088B3BC /* InfoAboutPets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutPets.swift; sourceTree = "<group>"; };
+		5459480F2924C8630088B3BC /* InfoAboutDevelopers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutDevelopers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				545947F92924B3A50088B3BC /* SceneDelegate.swift */,
 				545947FB2924B3A50088B3BC /* StartViewController.swift */,
 				545947FD2924B3A50088B3BC /* Main.storyboard */,
+				5459480F2924C8630088B3BC /* InfoAboutDevelopers.swift */,
 				5459480D2924C4610088B3BC /* InfoAboutPets.swift */,
 				5459480B2924C4230088B3BC /* CollectionViewController.swift */,
 				545948002924B3A70088B3BC /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				545947FC2924B3A50088B3BC /* StartViewController.swift in Sources */,
 				545947F82924B3A50088B3BC /* AppDelegate.swift in Sources */,
 				5459480E2924C4610088B3BC /* InfoAboutPets.swift in Sources */,
+				545948102924C8630088B3BC /* InfoAboutDevelopers.swift in Sources */,
 				545947FA2924B3A50088B3BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
