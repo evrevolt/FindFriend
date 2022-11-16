@@ -43,6 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54417070292515AE00F32C04 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				545947FB2924B3A50088B3BC /* StartViewController.swift */,
+				5459480F2924C8630088B3BC /* InfoAboutDevelopers.swift */,
+				5459480D2924C4610088B3BC /* InfoAboutPets.swift */,
+				5459480B2924C4230088B3BC /* CollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		54417071292515D600F32C04 /* Stotyboards */ = {
+			isa = PBXGroup;
+			children = (
+				545947FD2924B3A50088B3BC /* Main.storyboard */,
+				545948022924B3A70088B3BC /* LaunchScreen.storyboard */,
+			);
+			path = Stotyboards;
+			sourceTree = "<group>";
+		};
+		544170722925160100F32C04 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				545947F72924B3A50088B3BC /* AppDelegate.swift */,
+				545947F92924B3A50088B3BC /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		545947EB2924B3A50088B3BC = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +91,10 @@
 		545947F62924B3A50088B3BC /* FindFriend */ = {
 			isa = PBXGroup;
 			children = (
-				545947F72924B3A50088B3BC /* AppDelegate.swift */,
-				545947F92924B3A50088B3BC /* SceneDelegate.swift */,
-				545947FB2924B3A50088B3BC /* StartViewController.swift */,
-				545947FD2924B3A50088B3BC /* Main.storyboard */,
-				5459480F2924C8630088B3BC /* InfoAboutDevelopers.swift */,
-				5459480D2924C4610088B3BC /* InfoAboutPets.swift */,
-				5459480B2924C4230088B3BC /* CollectionViewController.swift */,
+				54417070292515AE00F32C04 /* ViewControllers */,
+				54417071292515D600F32C04 /* Stotyboards */,
+				544170722925160100F32C04 /* SupportFiles */,
 				545948002924B3A70088B3BC /* Assets.xcassets */,
-				545948022924B3A70088B3BC /* LaunchScreen.storyboard */,
 				545948052924B3A70088B3BC /* Info.plist */,
 			);
 			path = FindFriend;

@@ -74,6 +74,10 @@
                             <constraint firstItem="PQM-rb-Fic" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qFh-PO-onb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="OKw-vK-BxB" id="T1r-65-sSP"/>
+                        <outlet property="userNameTextField" destination="yEj-PN-nvN" id="pcB-sG-AGc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
