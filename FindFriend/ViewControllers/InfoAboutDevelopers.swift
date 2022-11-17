@@ -9,21 +9,29 @@ import UIKit
 
 class InfoAboutDevelopers: UIViewController {
 
+    
+    @IBOutlet var anastasiaImage: UIImageView!
+    @IBOutlet var gennadyImage: UIImageView!
+    
+    @IBOutlet var anastasiaTextField: UILabel!
+    @IBOutlet var gennadyTextField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        anastasiaImage.frame.size.width = 200
+        anastasiaImage.frame.size.height = 200
+        anastasiaImage.image = UIImage(named: "cat1.jpg")
+        
+        gennadyImage.frame.size.width = 200
+        gennadyImage.frame.size.height = 200
+        gennadyImage.image = UIImage(named: "cat1.jpg")
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func doneTapped() {
+        dismiss(animated: true)
     }
-    */
-
+    
 }

@@ -151,29 +151,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="О разрабах" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDn-7D-bHn">
-                                <rect key="frame" x="175" y="381" width="92" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="NFA-5e-cuT">
+                                <rect key="frame" x="96.666666666666686" y="146.66666666666663" width="200" height="490"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t3Y-Bj-FJJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="238"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MjP-U9-iZK">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="fEv-cB-B2W"/>
+                                                    <constraint firstAttribute="height" constant="200" id="mMh-L0-YAe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Анастасия" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDn-7D-bHn">
+                                                <rect key="frame" x="39.999999999999986" y="208.00000000000003" width="120.00000000000001" height="30"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="MjP-U9-iZK" firstAttribute="leading" secondItem="t3Y-Bj-FJJ" secondAttribute="leadingMargin" id="Ofv-zY-kId"/>
+                                            <constraint firstItem="WDn-7D-bHn" firstAttribute="leading" secondItem="t3Y-Bj-FJJ" secondAttribute="leading" constant="39.999999999999993" id="hrA-oC-h90"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SOo-5t-eIm">
+                                        <rect key="frame" x="0.0" y="252" width="200" height="238"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-1X-b6M">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="HsD-wJ-yza"/>
+                                                    <constraint firstAttribute="height" constant="200" id="rSl-eC-RhY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Геннадий" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfy-GG-i5l">
+                                                <rect key="frame" x="45.999999999999986" y="207.99999999999994" width="108.00000000000001" height="30"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wfy-GG-i5l" firstAttribute="leading" secondItem="SOo-5t-eIm" secondAttribute="leading" constant="45.999999999999993" id="c06-Ml-Jed"/>
+                                            <constraint firstItem="KMV-1X-b6M" firstAttribute="leading" secondItem="SOo-5t-eIm" secondAttribute="leadingMargin" id="rFF-Zd-ZHF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39N-6f-elL">
+                                <rect key="frame" x="298.33333333333331" y="75" width="62.666666666666686" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="done"/>
+                                <connections>
+                                    <action selector="doneTapped" destination="w5h-bZ-0TH" eventType="touchUpInside" id="F0L-dV-7hO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9q3-DT-FzP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="39N-6f-elL" secondAttribute="trailing" constant="16" id="C6h-6L-ud7"/>
+                            <constraint firstItem="39N-6f-elL" firstAttribute="top" secondItem="2Us-WS-3Uq" secondAttribute="topMargin" constant="16" id="bgi-Nb-I4R"/>
+                            <constraint firstItem="NFA-5e-cuT" firstAttribute="centerX" secondItem="2Us-WS-3Uq" secondAttribute="centerX" id="dUS-eV-rOh"/>
+                            <constraint firstItem="NFA-5e-cuT" firstAttribute="centerY" secondItem="2Us-WS-3Uq" secondAttribute="centerY" id="wzJ-Qn-paG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DIx-ur-3MR"/>
+                    <connections>
+                        <outlet property="anastasiaImage" destination="MjP-U9-iZK" id="jsS-Zz-ln3"/>
+                        <outlet property="anastasiaTextField" destination="WDn-7D-bHn" id="rBQ-Bl-VB7"/>
+                        <outlet property="gennadyImage" destination="KMV-1X-b6M" id="FBg-LE-JWj"/>
+                        <outlet property="gennadyTextField" destination="wfy-GG-i5l" id="o1M-xh-MJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsm-1d-vEw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="47" y="710"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Pets-->
         <scene sceneID="AXh-Af-bj5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="T8t-Hf-zuS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="zXR-zm-COh"/>
+                    <navigationItem key="navigationItem" title="Pets" id="zXR-zm-COh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="60L-WY-v3i">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
