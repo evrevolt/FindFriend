@@ -33,7 +33,6 @@ class DataStore {
         "llll@mail.ru"
     ]
     
-    
     let phones = [
         "745396026", "145036843", "287185656", "293520954",
         "562880225", "738594072", "825654134", "645898473",
@@ -41,9 +40,9 @@ class DataStore {
     ]
     
     let images = [
-        "1.jpg", "1.jpg", "1.jpg", "1.jpg",
-        "1.jpg", "1.jpg", "1.jpg", "1.jpg",
-        "1.jpg", "1.jpg"
+        "1.jpg", "2.jpg", "3.jpg", "4.jpg",
+        "5.jpg", "6.jpg", "7.jpg", "8.jpg",
+        "9.jpg", "10.jpg"
     ]
     
     
