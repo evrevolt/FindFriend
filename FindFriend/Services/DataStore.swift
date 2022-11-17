@@ -11,6 +11,9 @@ class DataStore {
     
     static let shared = DataStore()
     
+    let user = "user"
+    let password = "password"
+    
     var names = [
         "John", "Aaron", "Tim", "Ted",
         "Steven", "Sharon", "Nicola",
