@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541A7B5029264736005091DC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541A7B4F29264736005091DC /* DataStore.swift */; };
 		544170742925164500F32C04 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544170732925164500F32C04 /* Models.swift */; };
 		545947F82924B3A50088B3BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545947F72924B3A50088B3BC /* AppDelegate.swift */; };
 		545947FA2924B3A50088B3BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545947F92924B3A50088B3BC /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541A7B4F29264736005091DC /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		544170732925164500F32C04 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		545947F42924B3A50088B3BC /* FindFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545947F72924B3A50088B3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541A7B5129264739005091DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				541A7B4F29264736005091DC /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		54417070292515AE00F32C04 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 			children = (
 				54417070292515AE00F32C04 /* ViewControllers */,
 				544170752925165100F32C04 /* Models */,
+				541A7B5129264739005091DC /* Services */,
 				54417071292515D600F32C04 /* Stotyboards */,
 				544170722925160100F32C04 /* SupportFiles */,
 				545948002924B3A70088B3BC /* Assets.xcassets */,
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5459480C2924C4230088B3BC /* CollectionViewController.swift in Sources */,
+				541A7B5029264736005091DC /* DataStore.swift in Sources */,
 				545947FC2924B3A50088B3BC /* StartViewController.swift in Sources */,
 				545947F82924B3A50088B3BC /* AppDelegate.swift in Sources */,
 				5459480E2924C4610088B3BC /* InfoAboutPets.swift in Sources */,
