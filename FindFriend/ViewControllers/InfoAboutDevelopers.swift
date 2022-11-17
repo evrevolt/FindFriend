@@ -29,6 +29,10 @@ class InfoAboutDevelopers: UIViewController {
         
     }
     
+    override func viewWillLayoutSubviews() {
+        anastasiaImage.layer.cornerRadius = anastasiaImage.frame.height / 2
+        gennadyImage.layer.cornerRadius = gennadyImage.frame.height / 2
+    }
     
     @IBAction func doneTapped() {
         dismiss(animated: true)
