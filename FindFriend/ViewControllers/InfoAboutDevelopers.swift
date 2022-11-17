@@ -21,11 +21,11 @@ class InfoAboutDevelopers: UIViewController {
         
         anastasiaImage.frame.size.width = 200
         anastasiaImage.frame.size.height = 200
-        anastasiaImage.image = UIImage(named: "cat1.jpg")
+        anastasiaImage.image = UIImage(named: "anastasia.jpeg")
         
         gennadyImage.frame.size.width = 200
         gennadyImage.frame.size.height = 200
-        gennadyImage.image = UIImage(named: "cat1.jpg")
+        gennadyImage.image = UIImage(named: "gennady.jpg")
         
     }
     
