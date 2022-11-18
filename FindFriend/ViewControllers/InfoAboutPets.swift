@@ -9,21 +9,24 @@ import UIKit
 
 class InfoAboutPets: UIViewController {
 
+    var pet: Pets!
+    
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var petImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        petImage.layer.cornerRadius = 10
+        
+        petImage.image = UIImage(named: pet.image)
+        nameLabel.text = pet.name
+        phoneLabel.text = "Телефон: " + pet.phone
+        descriptionLabel.text = "Описание: " + pet.description
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
