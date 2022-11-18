@@ -9,12 +9,13 @@ import UIKit
 
 class InfoAboutPets: UIViewController {
 
-    var pet: Pets!
     
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var petImage: UIImageView!
+    
+    var pet: Pet!
     
     override func viewDidLoad() {
         super.viewDidLoad()
