@@ -19,7 +19,11 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
     
     @IBAction func forgotUser(_ sender: UIButton) {
         sender.tag == 0
@@ -37,6 +41,11 @@ class StartViewController: UIViewController {
             return
         }
         //performSegue(withIdentifier: "openVC", sender: nil)
+    }
+    
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+        userNameTextField.text = ""
+        passwordTextField.text = ""
     }
     
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
