@@ -9,10 +9,10 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     
-    let itemsPerRow: CGFloat = 2
-    let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    private let itemsPerRow: CGFloat = 2
+    private let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
-    private var pets = Pets.getPetsList()
+    private var pets = Pet.getPetsList()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,24 +21,23 @@ class CollectionViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let infoVC = segue.destination as? InfoAboutPets else { return }
-        let cell = sender as! PetCollectionViewCell
+        guard let cell = sender as? PetCollectionViewCell else { return }
         infoVC.pet = cell.pet
         
     }
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        1
-    }
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         pets.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "petCell", for: indexPath) as! PetCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "petCell",
+            for: indexPath
+        )
+                as? PetCollectionViewCell else { return UICollectionViewCell() }
         let pet = pets[indexPath.row]
         
         cell.petImageView.image = UIImage(named: pet.image)
