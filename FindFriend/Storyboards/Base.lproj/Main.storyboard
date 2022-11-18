@@ -151,11 +151,13 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="Y8S-mJ-h6o">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="KRC-Wc-jo4" id="o4V-My-5U7"/>
+                                <segue destination="z8u-sG-hXq" kind="unwind" unwindAction="unwindSegue:" id="a8r-ZV-iXV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKb-x6-MWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="z8u-sG-hXq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1745.625" y="-2.112676056338028"/>
         </scene>
