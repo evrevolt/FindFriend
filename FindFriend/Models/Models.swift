@@ -9,7 +9,6 @@ import Foundation
 
 struct Pets {
     let name: String
-    let petsType: String
     let description: String
     let phone: String
     let image: String
@@ -22,14 +21,12 @@ extension Pets {
         var petsList: [Pets] = []
         
         let names = dataStore.names.shuffled()
-        let petsTypes = dataStore.petsTypes.shuffled()
         let desctiprions = dataStore.descriptions.shuffled()
         let phones = dataStore.phones.shuffled()
         let images = dataStore.images.shuffled()
         
         let iterationCount = min(
             names.count,
-            petsTypes.count,
             desctiprions.count,
             phones.count,
             images.count
@@ -38,7 +35,6 @@ extension Pets {
         for index in 0..<iterationCount {
             let pets = Pets(
                 name: names[index],
-                petsType: petsTypes[index],
                 description: desctiprions[index],
                 phone: phones[index],
                 image: images[index]
