@@ -8,7 +8,6 @@
 import UIKit
 
 class PetCollectionViewCell: UICollectionViewCell {
-    var pet: Pets!
     
     @IBOutlet var petImageView: UIImageView! {
         didSet {
@@ -17,4 +16,6 @@ class PetCollectionViewCell: UICollectionViewCell {
     }
     
     @IBOutlet var petLabel: UILabel!
+    
+    var pet: Pet!
 }
