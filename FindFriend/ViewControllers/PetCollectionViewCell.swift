@@ -8,11 +8,13 @@
 import UIKit
 
 class PetCollectionViewCell: UICollectionViewCell {
+    var pet: Pets!
+    
     @IBOutlet var petImageView: UIImageView! {
         didSet {
             petImageView.layer.cornerRadius = 10
         }
     }
     
-    @IBOutlet var petsLabel: UILabel!
+    @IBOutlet var petLabel: UILabel!
 }
