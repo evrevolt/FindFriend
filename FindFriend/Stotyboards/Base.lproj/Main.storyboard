@@ -135,7 +135,7 @@
                                 <size key="customSize" width="150" height="200"/>
                                 <connections>
                                     <outlet property="petImageView" destination="3bs-QQ-lO6" id="0AL-M8-ahC"/>
-                                    <outlet property="petsLabel" destination="qvK-nd-BNz" id="fYn-ze-oKN"/>
+                                    <outlet property="petLabel" destination="qvK-nd-BNz" id="GdS-Qx-6QC"/>
                                     <segue destination="PdC-Kw-3oR" kind="presentation" id="vh7-1S-FGh"/>
                                 </connections>
                             </collectionViewCell>
@@ -207,7 +207,6 @@
                         <outlet property="descriptionLabel" destination="cet-xh-PxE" id="Dle-md-9HO"/>
                         <outlet property="nameLabel" destination="0Rf-xb-d7v" id="U3E-p9-OP7"/>
                         <outlet property="petImage" destination="ytD-le-3wX" id="zQR-j5-SvB"/>
-                        <outlet property="petName" destination="0Rf-xb-d7v" id="ALV-6G-Wl5"/>
                         <outlet property="phoneLabel" destination="ZOa-jY-EI4" id="RTi-m7-bIn"/>
                     </connections>
                 </viewController>
