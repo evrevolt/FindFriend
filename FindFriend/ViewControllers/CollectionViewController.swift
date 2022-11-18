@@ -7,8 +7,6 @@
 
 import UIKit
 
-//private let reuseIdentifier = "petCell"
-
 class CollectionViewController: UICollectionViewController {
     
     let itemsPerRow: CGFloat = 2
@@ -19,9 +17,6 @@ class CollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.showsVerticalScrollIndicator = false
-        
-        // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -53,6 +48,9 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
 
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
 }
 
 extension CollectionViewController: UICollectionViewDelegateFlowLayout {
