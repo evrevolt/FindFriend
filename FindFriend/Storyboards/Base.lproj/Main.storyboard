@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Животные в приютах-->
         <scene sceneID="fDj-da-YVH">
             <objects>
                 <collectionViewController modalPresentationStyle="fullScreen" id="KRC-Wc-jo4" customClass="CollectionViewController" customModule="FindFriend" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,13 +147,19 @@
                             <outlet property="delegate" destination="KRC-Wc-jo4" id="foy-Ta-114"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="ND5-Gd-ZpQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Y8S-mJ-h6o">
-                            <connections>
-                                <action selector="doneButtonPressed:" destination="KRC-Wc-jo4" id="o4V-My-5U7"/>
-                                <segue destination="z8u-sG-hXq" kind="unwind" unwindAction="unwindSegue:" id="a8r-ZV-iXV"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Животные в приютах" id="ND5-Gd-ZpQ">
+                        <centerItemGroups>
+                            <barButtonItemGroup customizationDisposition="fixed" id="wIY-8D-hQP">
+                                <barButtonItems>
+                                    <barButtonItem title="Log Out" id="Y8S-mJ-h6o">
+                                        <connections>
+                                            <action selector="doneButtonPressed:" destination="KRC-Wc-jo4" id="o4V-My-5U7"/>
+                                            <segue destination="z8u-sG-hXq" kind="unwind" unwindAction="unwindSegue:" id="a8r-ZV-iXV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </barButtonItems>
+                            </barButtonItemGroup>
+                        </centerItemGroups>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKb-x6-MWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -311,14 +317,13 @@
             </objects>
             <point key="canvasLocation" x="47" y="710"/>
         </scene>
-        <!--Pets-->
+        <!--Navigation Controller-->
         <scene sceneID="AXh-Af-bj5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="T8t-Hf-zuS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Pets" id="zXR-zm-COh"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="60L-WY-v3i">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="60L-WY-v3i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
